@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE4F2258-7E53-4D54-A479-B41F9EF279A8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>The_cheese_race</RootNamespace>
+    <AssemblyName>The cheese race</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WinnerAnnoucement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinnerAnnoucement.Designer.cs">
+      <DependentUpon>WinnerAnnoucement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonEllipse.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChooseLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseLanguage.Designer.cs">
+      <DependentUpon>ChooseLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Public Data.cs" />
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formexit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formexit.Designer.cs">
+      <DependentUpon>Formexit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="players name.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="players name.Designer.cs">
+      <DependentUpon>players name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RulesRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesRO.Designer.cs">
+      <DependentUpon>RulesRO.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="WinnerAnnoucement.resx">
+      <DependentUpon>WinnerAnnoucement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseLanguage.resx">
+      <DependentUpon>ChooseLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formexit.resx">
+      <DependentUpon>Formexit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="players name.resx">
+      <DependentUpon>players name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesRO.resx">
+      <DependentUpon>RulesRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\green button1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\des lancer.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lol.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Soarece Exit.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SteagFR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SteagRO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GifTambour.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background Name Player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Run Button.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_mouse0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_mouse90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_mouse180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_mouse270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueForward1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueForward2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cascaval.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Run Button.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_mouse0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_mouse90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_mouse180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green_mouse270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManyMousesWin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManyWinnersRrules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NumeJucatorilor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasInainte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play Tutorial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrezentareTablaJoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple Run Button.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple_mouse0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple_mouse90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple_mouse180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple_mouse270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Run Button.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_mouse0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_mouse90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_mouse180.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red_mouse270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RotatieDreapta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RotatieSpate%28180%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RotatieStanga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RuleCanibal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RuleCanibal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RuleCanibal3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RuleCanibal4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RuleCanibal5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RuleTeleport1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RuleTeleport2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RuleTeleport3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RuleTeleport4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RuleTeleport5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sageata Backward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sageata Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sageata Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sageata Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SecondChance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SemnExclamatie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SemnIntrebare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Soarece Exit DA NU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SteagEN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TablaJoc.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Winner Is.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Winner Is Rules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZarSpate.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
